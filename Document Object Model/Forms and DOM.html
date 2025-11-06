@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and DOM</title>
+</head>
+<body>
+<form id="form" action="/Forms and DOM.html">
+   FirstName:<input type="Text" name="fname" value="Teja"><br>
+   LastName:<input type="Text" name="lname" value="K.R"><br>
+   Phone Number:<input type="Number" name="phonenumber"><br><br>
+   <button type="submit">Submit</button>
+
+
+
+
+</form>
+<p id="data">
+</p>
+<script>
+const x = document.forms["form"];
+let text = "";
+for (let i = 0; i < x.length ;i++) {
+  text += x.elements[i].value + "<br>";
+}
+document.getElementById("data").innerHTML = text;
+document.getElementById("data").style.color="blue"
+</script>
+
+</body>
+</html>
+<!--
+Understanding the Document object model, its function , use , its methods and its properties as object 
+-->

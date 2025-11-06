@@ -1,0 +1,35 @@
+<!-- DOM Manipulation
+Document object model means that there is a tree like structure set up , where javascript can access , change html attributes , properties ,etc , DOM is a W3C standard
+!-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning and Trying out DOM </title>
+    
+</head>
+<body>
+    <p id="DOM">
+Life is beautiful!
+    </p>
+    
+    <p class="Life">
+        Lets change the value of life , 
+    </p>
+    <p id="querySelectorAll">
+
+    </p>
+    <script>
+        document.getElementById("DOM").innerHTML="Happiness is soul searching one itself"
+        const tagname=document.getElementsByTagName("p")
+        document.getElementsByClassName("Life")[0].innerHTML= "Well " + tagname[0].innerHTML;
+        const a= document.querySelectorAll("p.Life");
+        document.getElementById("querySelectorAll").innerHTML="It is a fine day" + a[0].innerHTML
+    </script>
+</body>
+</html>
+<!-- By this Exploration, we did explore the concepts of dom , modifying the content inside a html paragraph tag -->
+
+

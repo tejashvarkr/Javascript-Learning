@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation with Event Listener</title>
+  <style>
+  
+    #box { 
+      width: 100px;
+      height: 100px;
+      background-color: steelblue;
+      position: relative;
+      transition: transform 1s ease; 
+    }
+
+
+    .move {
+      transform: translateX(200px); 
+      background-color: coral; 
+    }
+
+  
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Click the button to move the box!</h3>
+
+  <div id="box"></div>
+  <button id="animateBtn">Animate</button>
+
+  <script>
+  
+    const box = document.getElementById("box");
+    const button = document.getElementById("animateBtn");
+
+    
+    button.addEventListener("click", function() {
+      
+      box.classList.toggle("move");
+    });
+  </script>
+
+</body>
+</html>
