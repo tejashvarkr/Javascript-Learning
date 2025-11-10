@@ -10,11 +10,12 @@
 - Understood the behavior of iterators ,  this keyword, object references, and the difference between == and ===.
 - Implemented various function concepts — recursion, closures, rest parameters, and the arguments object.
 - Gained understanding of how functions, objects, and arrays interact and reference each other in JavaScript.
+- Practiced concepts of iterables, generators,debugging,and ES6 Fundamentals 
 ---
 
 # Learning Outcomes
 
 1. Understood JavaScript basics: variables, data types, control flow, functions, objects,arrays and iterators 
 2. Gained hands-on experience with scope, closures, and error handling  
-3. Built a strong foundation for advanced concepts like asynchronous programming and DOM manipulation
+3. Built a strong foundation of advanced concepts like asynchronous programming and DOM manipulation
 
